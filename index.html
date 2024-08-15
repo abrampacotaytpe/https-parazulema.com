@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.65">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title>tenga mi mensaje</title>
+    <style>
+        body {
+            margin: 0;
+
+            width: 100vw;
+
+            height: 100vh;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            background: linear-gradient(to top, #271a67, #5a37a1, #9b71df);
+
+            background-size: cover;
+            background-position: center center;
+        }
+
+
+        #card {
+
+            position: relative;
+
+            perspective: 3000px;
+
+        }
+
+        section {
+            width: 560px;
+
+            height: 400px;
+
+            border-radius: 10px;
+
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+        }
+
+        #cover {
+
+            background-color: #0f2342;
+            color: #ffffff;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            
+
+        }
+
+        #cover.animate {
+            transform: rotatex(180deg);
+
+            transform-origin: 0% 0%;
+
+            transition: transform 2s;
+        }
+
+        #cover.animate>* {
+            opacity: 0;
+
+            transition: opacity 1s;
+        }
+
+        #cover:hover {
+            transform: rotatex(180deg);
+
+            transform-origin: 0% 0%;
+
+            transition: transform 2s;  
+        }
+
+        #cover img {
+            height: 50%;
+        }
+
+        #cover h1 {
+            font-size: 32px;
+            margin: 0%;
+        }
+
+        #cover h2 {
+            font-size: 18px;
+            margin: 0px;
+        }
+
+
+        #message {
+            
+
+            background-color: rgba(255, 255, 255, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            backdrop-filter: blur(8px);
+        }
+
+        #message h1 {
+            margin: 0;
+        }
+
+        #message img {
+            height: 60%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <main id="card">
+        <section id="cover">
+            <h1>Para La Mejor </h1>
+            <h1> Yo y amorcito Te Queremos ❤️ </h1>
+
+             
+        </section>
+        <section id="message">
+            <h1>¡Feliz dia zule!</h1>
+            <h1>Para ti que vuelves mi dia mas especial.🎉</h1>
+            <h1> feliz solo con saber de ti, me siento 🙇</h1>
+            <h1> afortunado de que seas parte de mi vida 🙇</h1>
+            <h1> querida amiga🫠</h1>
+        </section>
+
+        
+        <a href="destinoflor.html" class="boton-redireccion">siguiente pagina</a>
+
+    </main>
+</body>
+</html>
